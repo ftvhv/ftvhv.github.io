@@ -274,6 +274,7 @@ header {
 .title__man__light {
   position: absolute;
   left: -150px;
+  bottom: -200px;
 }
 .light-text {
   font-size: 16px;
