@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<!-- <link rel="stylesheet" href="style.css"> -->
 <link rel="stylesheet" href="less/dist/less.css">
 <link rel="stylesheet" href="styles/media/dist/media.css">
 <link type="image/x-icon" href="img/favicon.png" rel="shortcut icon">
@@ -22,36 +21,33 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html">About us</a></li>
                     <li><a href="index.html">Service</a></li>
-                    <div class="menu__navbar__page">
-                        <li><a>Page<img src="img/arrow_down.png" alt="arrow" class="navbar-arrow"></a></li>
-                        <div class="menu__navbar__page__dropdown">
-                            <a href="index.html">Pricing Plan</a>
-                            <a href="index.html">Our Team</a>
-                            <a href="index.html">FAQ</a>
-                            <a href="index.html">Terms & Conditions</a>
-                            <a href="index.html">Privacy Policy</a>
-                        </div>
+                    <div class="menu__navbar__page ">
+                        <input type="checkbox" id="page-checkbox" class="page-checkbox">
+                        <label for="page-checkbox" class="page-label"> <li><a>Page<img src="img/arrow_down.png" alt="arrow" class="navbar-arrow"></a></li></label>                       
+                        <ul class="menu__navbar__page__dropdown">
+                            <a href="index.html" class="menu__navbar__page__dropdown__item">Pricing Plan</a>
+                            <a href="index.html" class="menu__navbar__page__dropdown__item">Our Team</a>
+                            <a href="index.html" class="menu__navbar__page__dropdown__item">FAQ</a>
+                            <a href="index.html" class="menu__navbar__page__dropdown__item">Terms & Conditions</a>
+                            <a href="index.html" class="menu__navbar__page__dropdown__item">Privacy Policy</a>
+                        </ul>
                     </div>
-
-                    
-                    <!-- <div class="menu__navbar__page">
-                        <li onmouseover="drop()" onmouseout="hide()"><a href="404.html">Page</a><img src="img/arrow_down.png" alt="arrow" class="menu__navbar__arrow"></li>
-                        <div id="dropId" class="menu__navbar__dropdown dropClass">
-                            <a href="404.html">Pricing Plan</a>
-                            <a href="404.html">Our Team</a>
-                            <a href="404.html">FAQ</a>
-                            <a href="404.html">Terms & Conditions</a>
-                            <a href="404.html">Privacy Policy</a>
-                        </div>
-                    </div> -->
-                    
                     <li><a href="index.html">Blog</a><img src="img/arrow_down.png" alt="arrow" class="navbar-arrow"></li>
                 </ul>
-                
                 <form action="index.html" target="_blank">
                     <button class="button menu__button">Contact us</button>
-                </form>
-                <img src="img/menu_burger.png" alt="nemu" class="menu__burger">
+                 </form>
+                <div class="burger-container">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"><img src="img/menu_burger.png" alt="menu" class="menu__burger"></label>
+                    <ul class="burger-list">
+                        <li><a href="index.html" class="burger-item">Home</a></li>
+                        <li><a href="index.html" class="burger-item">About us</a></li>
+                        <li><a href="index.html" class="burger-item">Service</a></li>
+                        <li><a href="index.html" class="burger-item">Page</a></li>
+                        <li><a href="index.html" class="burger-item">Blog</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -97,7 +93,6 @@
                 </div>
             </section>
         </div>
-        
     </main>
     <footer>
         <img src="img/waves_2.png" alt="wave" class="waves-bottom">
@@ -118,7 +113,6 @@
                 <li><a href="index.html">Blog</a></li>
                 <li><a href="index.html">Our Team</a></li>
                </ul>
-
                <ul class="footer__support">
                 <li>Support</li>
                 <li><a href="index.html">About us</a></li>
@@ -127,7 +121,6 @@
                 <li><a href="index.html">Team & Conditions</a></li>
                 <li><a href="index.html">Privacy Policy</a></li>
                </ul>
-
                <ul class="footer__list-img">
                 <li>Need Help?</li>
                 <li><img src="img/location.png" alt="icon" class="footer__list-img__icon"><a href="index.html">Tanjung Sari Street no.48, Pontianak City</a></li>
@@ -139,8 +132,6 @@
                 <p class="light-text">© Copyright 2023, All Rights Reserved</p>
             </div>
         </div>
-        
     </footer>
-
 </body>
 </html>
