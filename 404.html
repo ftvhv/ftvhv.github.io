@@ -16,44 +16,43 @@
     <header>
         <div class="container">
             <div class="menu">
-                <img src="img/logo.png" alt="logo" class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
                 <ul class="menu__navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">About us</a></li>
-                    <li><a href="index.html">Service</a></li>
-                    <div class="menu__navbar__page ">
-                        <input type="checkbox" id="page-checkbox" class="page-checkbox">
-                        <label for="page-checkbox" class="page-label"><li><a>Page<img src="img/arrow_down.png" alt="arrow" class="navbar-arrow"></a></li></label>                       
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <div class="menu__navbar__page">
+                        <input type="checkbox" id="page-checkbox" class="menu__navbar__page__checkbox">
+                        <label for="page-checkbox" class="menu__navbar__page__label"> <li><a>Page<img src="img/arrow_down.png" alt="arrow" class="navbar-arrow"></a></li></label>                       
                         <ul class="menu__navbar__page__dropdown">
-                            <a href="index.html" class="menu__navbar__page__dropdown__item">Pricing Plan</a>
-                            <a href="index.html" class="menu__navbar__page__dropdown__item">Our Team</a>
-                            <a href="index.html" class="menu__navbar__page__dropdown__item">FAQ</a>
-                            <a href="index.html" class="menu__navbar__page__dropdown__item">Terms & Conditions</a>
-                            <a href="index.html" class="menu__navbar__page__dropdown__item">Privacy Policy</a>
+                            <a href="#price" class="menu__navbar__page__dropdown__item">Pricing Plan</a>
+                            <a href="#subscribe" class="menu__navbar__page__dropdown__item">FAQ</a>
+                            <a href="#terms" class="menu__navbar__page__dropdown__item">Terms & Conditions</a>
+                            <a href="#privacy" class="menu__navbar__page__dropdown__item">Privacy Policy</a>
                         </ul>
                     </div>
-                    <li><a href="index.html">Blog</a><img src="img/arrow_down.png" alt="arrow" class="navbar-arrow"></li>
+                    <li><a href="#blog">Blog</a></li>
                 </ul>
-                <form action="index.html" target="_blank">
+                <form action="404.html" target="_blank">
                     <button type="submit" class="button menu__button">Contact us</button>
                  </form>
                 <div class="burger-container">
                     <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
                     <label for="burger-checkbox" class="burger"><img src="img/menu_burger.png" alt="menu" class="menu__burger"></label>
                     <ul class="burger-list">
-                        <li><a href="index.html" class="burger-item">Home</a></li>
-                        <li><a href="index.html" class="burger-item">About us</a></li>
-                        <li><a href="index.html" class="burger-item">Service</a></li>
-                        <li><a href="index.html" class="burger-item">Page</a></li>
-                        <li><a href="index.html" class="burger-item">Blog</a></li>
+                        <li><a href="#home" class="burger-item">Home</a></li>
+                        <li><a href="#about" class="burger-item">About us</a></li>
+                        <li><a href="#service" class="burger-item">Service</a></li>
+                        <li><a href="#page" class="burger-item">Page</a></li>
+                        <li><a href="#blog" class="burger-item">Blog</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <div>
-            <div class="container">
+        <section>
+            <div class="container" id="home about privacy">
                 <div class="not-found">
                     <div>
                         <h6>404 Error</h6>
@@ -75,22 +74,23 @@
                     <img src="img/404_man.png" alt="man" class="not-found__man">
                 </div>
             </div>
-        </div>
-            <section>
+        </section>
+            <section id="subscribe">
                 <div class="container">
                     <div class="subscribe">
                         <p class="subscribe__heading">Subscribe to our newsletter for latest updates</p>
                         <div class="subscribe__send">
-                            <div class="subscribe__send__form">
-                                <img src="img/message.png" alt="icon" class="subscribe__send__form__icon">
-                                <input type="email" placeholder="Enter your email address"></input>
-                            </div>
-                            <img src="img/send.png" alt="send" class="subscribe__send__button">
+                            <form class="subscribe__send__form">
+                                <div>
+                                    <img src="img/message.png" alt="icon" class="subscribe__send__form__icon">
+                                    <input type="email" placeholder="Enter your email address"></input>
+                                </div>
+                                <a href="404.html"><img src="img/send.png" alt="send" class="subscribe__send__form__button"></a>
+                            </form>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
     </main>
     <footer>
         <img src="img/waves_2.png" alt="wave" class="waves-bottom">
