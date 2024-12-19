@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VRNas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VRNas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="less/dist/less.css">
@@ -18,21 +18,20 @@
             <div class="menu">
                 <img src="img/logo.png" alt="logo" class="logo">
                 <ul class="menu__navbar">
-                    <li><a href="404.html">Home</a></li>
-                    <li><a href="404.html">About us</a></li>
-                    <li><a href="404.html">Service</a></li>
-                    <div class="menu__navbar__page ">
-                        <input type="checkbox" id="page-checkbox" class="page-checkbox">
-                        <label for="page-checkbox" class="page-label"> <li><a>Page<img src="img/arrow_down.png" alt="arrow" class="navbar-arrow"></a></li></label>                       
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <div class="menu__navbar__page">
+                        <input type="checkbox" id="page-checkbox" class="menu__navbar__page__checkbox">
+                        <label for="page-checkbox" class="menu__navbar__page__label"> <li><a>Page<img src="img/arrow_down.png" alt="arrow" class="navbar-arrow"></a></li></label>                       
                         <ul class="menu__navbar__page__dropdown">
-                            <a href="404.html" class="menu__navbar__page__dropdown__item">Pricing Plan</a>
-                            <a href="404.html" class="menu__navbar__page__dropdown__item">Our Team</a>
-                            <a href="404.html" class="menu__navbar__page__dropdown__item">FAQ</a>
-                            <a href="404.html" class="menu__navbar__page__dropdown__item">Terms & Conditions</a>
-                            <a href="404.html" class="menu__navbar__page__dropdown__item">Privacy Policy</a>
+                            <a href="#price" class="menu__navbar__page__dropdown__item">Pricing Plan</a>
+                            <a href="#subscribe" class="menu__navbar__page__dropdown__item">FAQ</a>
+                            <a href="#terms" class="menu__navbar__page__dropdown__item">Terms & Conditions</a>
+                            <a href="#privacy" class="menu__navbar__page__dropdown__item">Privacy Policy</a>
                         </ul>
                     </div>
-                    <li><a href="404.html">Blog</a><img src="img/arrow_down.png" alt="arrow" class="navbar-arrow"></li>
+                    <li><a href="#blog">Blog</a></li>
                 </ul>
                 <form action="404.html" target="_blank">
                     <button type="submit" class="button menu__button">Contact us</button>
@@ -41,11 +40,11 @@
                     <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
                     <label for="burger-checkbox" class="burger"><img src="img/menu_burger.png" alt="menu" class="menu__burger"></label>
                     <ul class="burger-list">
-                        <li><a href="404.html" class="burger-item">Home</a></li>
-                        <li><a href="404.html" class="burger-item">About us</a></li>
-                        <li><a href="404.html" class="burger-item">Service</a></li>
-                        <li><a href="404.html" class="burger-item">Page</a></li>
-                        <li><a href="404.html" class="burger-item">Blog</a></li>
+                        <li><a href="#home" class="burger-item">Home</a></li>
+                        <li><a href="#about" class="burger-item">About us</a></li>
+                        <li><a href="#service" class="burger-item">Service</a></li>
+                        <li><a href="#page" class="burger-item">Page</a></li>
+                        <li><a href="#blog" class="burger-item">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -82,7 +81,7 @@
                 </div>
             </div>
         </section>
-            <section>
+            <section  id="home">
                 <div class="container">
                     <div class="pros">
                         <div>
@@ -103,7 +102,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="about">
                 <div class="container">
                     <div class="about-us">
                         <div class="about-us__img">
@@ -133,7 +132,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="service">
                 <div class="container">
                     <div class="service">
                         <div class="service__info">
@@ -151,7 +150,7 @@
                                 <img src="img/software.png" alt="icon" class="service__cards__card__icon">
                                 <h5>VR Development</h5>
                                 <p class="service__cards__card__text">From concept to creation, our team of VR developers will bring your vision to life.</p>
-                                    <form action="404.html" target="_blank" class="service__cards__card-hover">
+                                    <form action="404.html" target="_blank" class="service__cards__card__hover">
                                         <button type="submit" class="button-stroke">learn more</button>
                                      </form>
                             </div>
@@ -159,7 +158,7 @@
                                 <img src="img/design.png" alt="icon" class="service__cards__card__icon">
                                 <h5>VR Design</h5>
                                 <p class="service__cards__card__text">Our talented VR designers will create immersive and engaging environments that will captivate your audience.</p>
-                                    <form action="404.html" target="_blank" class="service__cards__card-hover">
+                                    <form action="404.html" target="_blank" class="service__cards__card__hover">
                                         <button type="submit" class="button-stroke">learn more</button>
                                      </form>
                             </div>
@@ -167,7 +166,7 @@
                                 <img src="img/review_2.png" alt="icon" class="service__cards__card__icon">
                                 <h5>VR Consulting</h5>
                                 <p class="service__cards__card__text">Our VR consultants will work with you to ensure that your VR experience meets your goals and exceeds your expectations.</p>
-                                    <form action="404.html" target="_blank" class="service__cards__card-hover">
+                                    <form action="404.html" target="_blank" class="service__cards__card__hover">
                                         <button type="submit" class="button-stroke">learn more</button>
                                      </form>
                             </div>
@@ -175,7 +174,7 @@
                                 <img src="img/video-console.png" alt="icon" class="service__cards__card__icon">
                                 <h5>VR Games</h5>
                                 <p class="service__cards__card__text">We offer a wide selection of VR games that are suitable for players of all ages and skill levels.e</p>
-                                    <form action="404.html" target="_blank" class="service__cards__card-hover">
+                                    <form action="404.html" target="_blank" class="service__cards__card__hover">
                                         <button type="submit" class="button-stroke">learn more</button>
                                      </form>
                             </div>
@@ -183,7 +182,7 @@
                                 <img src="img/party.png" alt="icon" class="service__cards__card__icon">
                                 <h5>VR Events</h5>
                                 <p class="service__cards__card__text">Make your next event unforgettable with our VR event services.</p>
-                                    <form action="404.html" target="_blank" class="service__cards__card-hover">
+                                    <form action="404.html" target="_blank" class="service__cards__card__hover">
                                         <button type="submit" class="button-stroke">learn more</button>
                                      </form>
                             </div>
@@ -191,7 +190,7 @@
                                 <img src="img/theatre.png" alt="icon" class="service__cards__card__icon">
                                 <h5>VR Entertainment</h5>
                                 <p class="service__cards__card__text">Create a VR escape room, or offer VR experiences at a theme park, we have the expertise and experience to make it happen.</p>
-                                <form action="404.html" target="_blank" class="service__cards__card-hover">
+                                <form action="404.html" target="_blank" class="service__cards__card__hover">
                                     <button type="submit" class="button-stroke">learn more</button>
                                 </form>
                             </div>
@@ -199,7 +198,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="privacy">
                 <div class="container">
                     <div class="choose">
                         <div class="choose__info">
@@ -236,7 +235,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="terms">
                 <div class="container">
                     <div class="start">
                         <h6>how to get started</h6>
@@ -271,7 +270,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="price">
                 <div class="container">
                     <div class="pricing">
                         <h6>our pricing</h6>
@@ -324,7 +323,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="blog">
                 <div class="container">
                     <div class="articles">
                         <img src="img/assets.png" alt="assets" class="article-assets">
@@ -393,16 +392,18 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="subscribe">
                 <div class="container">
                     <div class="subscribe">
                         <p class="subscribe__heading">Subscribe to our newsletter for latest updates</p>
                         <div class="subscribe__send">
                             <form class="subscribe__send__form">
-                                <img src="img/message.png" alt="icon" class="subscribe__send__form__icon">
-                                <input type="email" placeholder="Enter your email address"></input>
+                                <div>
+                                    <img src="img/message.png" alt="icon" class="subscribe__send__form__icon">
+                                    <input type="email" placeholder="Enter your email address"></input>
+                                </div>
+                                <a href="404.html"><img src="img/send.png" alt="send" class="subscribe__send__form__button"></a>
                             </form>
-                            <a href="404.html"><img src="img/send.png" alt="send" class="subscribe__send__button"></a>
                         </div>
                     </div>
                 </div>
