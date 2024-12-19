@@ -5,11 +5,17 @@
 .gradient {
   background-image: linear-gradient(to right, #0CBAF1, #E95CE9);
 }
+.gradient-dark {
+  background-image: linear-gradient(to top, rgba(37, 37, 50, 0) 0px, rgba(37, 37, 50, 0.91) 81px, #252532 152px);
+}
 .gradient-text {
   background-image: linear-gradient(to right, #0CBAF1, #E95CE9);
   background-clip: text;
   color: transparent;
   display: inline-block;
+}
+.back6 {
+  background-color: rgba(255, 255, 255, 0.06);
 }
 .waves {
   position: absolute;
@@ -47,9 +53,6 @@
   position: absolute;
   z-index: -1;
   left: 0;
-}
-.back6 {
-  background-color: rgba(255, 255, 255, 0.06);
 }
 main {
   overflow-x: hidden;
@@ -108,10 +111,14 @@ main {
   .title__man {
     width: 447px;
     height: 536px;
+    position: relative;
   }
   .title__man__ph {
     width: 447px;
     height: 536px;
+    position: absolute;
+    top: 23px;
+    right: 0px;
   }
   .title__man__light {
     top: 0px;
@@ -171,10 +178,10 @@ main {
   .service__cards__card {
     width: 295px;
   }
-  .service__cards__card-hover {
-    width: 275px;
-    padding: 0px 75px;
-    margin-top: 168px;
+  .service__cards__card__hover {
+    width: 295px;
+    padding: 0px 55px;
+    margin-top: 188px;
   }
   .choose {
     margin-bottom: 150px;
@@ -459,13 +466,13 @@ main {
   }
   .title__man {
     width: 355px;
-    height: 510px;
     display: flex;
   }
   .title__man__ph {
     width: 355px;
     height: 436px;
     align-self: flex-end;
+    top: 153px;
   }
   .small-video {
     width: 154px;
@@ -535,6 +542,11 @@ main {
   }
   .service__cards__card__icon {
     margin-bottom: 40px;
+  }
+  .service__cards__card__hover {
+    width: 330px;
+    padding: 0px 75px;
+    margin-top: 148px;
   }
   .service__cards .card-events {
     grid-row: 25 / span 10;
@@ -849,7 +861,8 @@ main {
     height: 372px;
     overflow-x: hidden;
     position: absolute;
-    right: -300px;
+    bottom: 373px;
+    right: -275px;
   }
   .title__man__light {
     top: -500px;
@@ -936,13 +949,13 @@ main {
   .service__cards__card__text {
     margin-bottom: 25px;
   }
-  .service__cards__card .service__cards__card-hover {
+  .service__cards__card .service__cards__card__hover {
     opacity: 1;
   }
   .service__cards__card:hover {
     border: none;
   }
-  .service__cards__card-hover {
+  .service__cards__card__hover {
     border-image: linear-gradient(to right, #0CBAF1, #E95CE9);
     border-image-slice: 1;
     background-image: none;
@@ -953,8 +966,28 @@ main {
     margin: -38px -56px -51px -32px;
     margin-top: 0px;
   }
-  .service__cards__card-hover button {
+  .service__cards__card__hover button {
     padding: 10px 45px;
+  }
+  .service__cards .card-design {
+    grid-row-start: 2;
+  }
+  .service__cards .card-games {
+    grid-row-start: 23;
+    grid-column: 1;
+  }
+  .service__cards .card-events {
+    grid-row-start: 24;
+    grid-column: 2;
+  }
+  .service__cards .card-entertainment {
+    grid-row-start: 13;
+    grid-column: 2;
+    margin-top: 0;
+  }
+  .service__cards .card-consulting {
+    grid-row-start: 12;
+    margin-top: 0;
   }
   .choose {
     margin-bottom: 100px;
@@ -1282,11 +1315,11 @@ main {
   }
   .title__man {
     width: 275px;
-    height: 145px;
   }
   .title__man__ph {
     width: 354px;
     height: 422px;
+    bottom: 422px;
   }
   .title__man__light {
     top: -230px;
@@ -1386,10 +1419,10 @@ main {
   .service__cards__card__icon {
     margin-bottom: 38px;
   }
-  .service__cards__card-hover {
+  .service__cards__card__hover {
     padding: 0px 104px;
   }
-  .service__cards__card-hover button {
+  .service__cards__card__hover button {
     padding: 10px 65px;
   }
   .service__cards .card-design {
@@ -1403,9 +1436,11 @@ main {
   }
   .service__cards .card-events {
     grid-row-start: 45;
+    grid-column: 1;
   }
   .service__cards .card-entertainment {
     grid-row-start: 56;
+    grid-column: 1;
   }
   .choose {
     flex-direction: column;
@@ -1867,11 +1902,11 @@ main {
   .service__cards__card__text {
     margin-bottom: 50px;
   }
-  .service__cards__card-hover {
+  .service__cards__card__hover {
     padding: 0px 27px;
     margin: -18px -36px -60px -12px;
   }
-  .service__cards__card-hover button {
+  .service__cards__card__hover button {
     padding: 10px 25px;
   }
   .choose {
