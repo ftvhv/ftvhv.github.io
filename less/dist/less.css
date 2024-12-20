@@ -366,7 +366,7 @@ header {
 }
 .about-us__img .small-video {
   top: 517px;
-  left: 316px;
+  left: 306px;
 }
 .about-us__info {
   padding-top: 75px;
@@ -377,13 +377,14 @@ header {
   max-width: 550px;
 }
 .about-us__info p {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
+  max-width: 530px;
 }
 .about-us__info__list {
   margin-bottom: 32px;
 }
 .about-us__info__list li {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 .about-us__info__list li img {
   margin-right: 12px;
@@ -400,7 +401,7 @@ header {
 .about-us__man img:nth-child(2) {
   position: absolute;
   top: 125px;
-  left: -15px;
+  left: -25px;
   z-index: -3;
 }
 .service {
@@ -412,6 +413,7 @@ header {
 .service__info p {
   max-width: 625px;
   margin-bottom: 46px;
+  padding-top: 5px;
 }
 .service__info__light {
   position: relative;
@@ -483,7 +485,6 @@ header {
 .service__cards .card-consulting,
 .service__cards .card-entertainment {
   grid-column: 0.75;
-  margin-top: 20px;
 }
 .service__cards .card-expertise {
   grid-row: 1 / span 10;
@@ -514,7 +515,7 @@ header {
 .choose {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 185px;
+  margin-bottom: 180px;
 }
 .choose__man {
   position: relative;
@@ -534,7 +535,7 @@ header {
 }
 .choose__info {
   width: 548px;
-  padding-top: 95px;
+  padding-top: 92px;
 }
 .choose__info h2 {
   margin-bottom: 32px;
@@ -544,14 +545,14 @@ header {
   justify-content: space-between;
 }
 .choose__info__heading:not(:first-of-type) {
-  padding-top: 48px;
+  padding-top: 45px;
 }
 .choose__img {
   position: relative;
 }
 .choose__img .clients-vid {
-  top: 571px;
-  left: 280px;
+  top: 567px;
+  left: 285px;
 }
 .play:hover {
   transform: scale(1.5, 1.5);
@@ -714,11 +715,8 @@ header {
   max-width: 582px;
   line-height: 28px;
 }
-.pricing__pros__man {
-  margin-right: -15px;
-}
 .pricing__price {
-  padding: 20px 70px 18px;
+  padding: 27px 70px 18px;
   background-color: #252532;
   border: 1px solid;
   border-image: linear-gradient(to right, #0CBAF1, #E95CE9);
@@ -735,12 +733,15 @@ header {
 .pricing__price__99 {
   font-size: 60px;
   font-weight: 600;
-}
-.pricing__price button {
   margin-bottom: 14px;
+}
+.pricing__price .button-colored {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .pricing__price__guarantee {
   font-size: 12px;
+  margin-top: 28px;
 }
 .partners {
   text-align: center;
@@ -885,7 +886,7 @@ header {
 .subscribe {
   background-image: linear-gradient(to right, #0CBAF1, #E95CE9);
   border: none;
-  padding: 40px 74px 34px;
+  padding: 40px 74px 29px;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -895,11 +896,13 @@ header {
   font-size: 40px;
   font-weight: 500;
   max-width: 520px;
+  line-height: 58px;
 }
 .subscribe__send {
   width: 365px;
   height: 56px;
   padding: 3px 4px 4px 14px;
+  margin-top: -15px;
   align-self: center;
   background-color: rgba(255, 255, 255, 0.07);
 }
@@ -932,19 +935,23 @@ header {
 .subscribe__send__form__button {
   width: 50px;
   height: 50px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
 }
 footer {
   position: relative;
 }
 footer .footer {
   background-color: transparent;
-  padding: 126px 0 1px;
+  padding: 119px 0 1px;
   display: grid;
   grid-template-columns: 419px 233px 218px 339px;
   grid-template-rows: 164px 44px 67px;
 }
 footer .footer ul li {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 footer .footer ul li:first-of-type {
   font-size: 16px;
@@ -1053,6 +1060,9 @@ footer .footer nav:last-of-type {
 }
 .not-found h6 {
   margin-bottom: 10px;
+}
+.not-found h2 {
+  margin-bottom: 16px;
 }
 .not-found__man {
   position: absolute;
