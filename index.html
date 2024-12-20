@@ -305,9 +305,7 @@
                         <div class="pricing__price">
                             <p class="pricing__price__start">Start from</p>
                             <p class="pricing__price__99">$99</p>
-                            <form action="404.html" target="_blank">
-                                <button type="submit" class="button-colored">get started</button>
-                             </form>
+                            <a href="404.html" class="button-colored">get started</a>
                             <p class="pricing__price__guarantee">30 Days Moneyback Guarantee</p>
                         </div>
                         <img src="img/pricing_light.png" alt="price" class="pricing__light">
@@ -387,7 +385,7 @@
                             </div>
                             <form action="404.html" target="_blank">
                                 <button type="submit" class="button-stroke articles__button">see all</button>
-                             </form>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -397,12 +395,14 @@
                     <div class="subscribe">
                         <p class="subscribe__heading">Subscribe to our newsletter for latest updates</p>
                         <div class="subscribe__send">
-                            <form class="subscribe__send__form">
+                            <form class="subscribe__send__form" action="404.html">
                                 <div>
                                     <img src="img/message.png" alt="icon" class="subscribe__send__form__icon">
                                     <input type="email" placeholder="Enter your email address"></input>
                                 </div>
-                                <a href="404.html"><img src="img/send.png" alt="send" class="subscribe__send__form__button"></a>
+                                <button type="submit" class="subscribe__send__form__button">
+                                    <img src="img/send.png" alt="send">
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -451,3 +451,4 @@
     <script src="js/js.js"></script>
 </body>
 </html>
+
