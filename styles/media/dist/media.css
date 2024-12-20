@@ -207,6 +207,8 @@ main {
   .choose__info__heading {
     display: flex;
     justify-content: space-between;
+  }
+  .choose__info__heading:not(::first-of-type) {
     padding-top: 48px;
   }
   .choose__img {
@@ -288,6 +290,9 @@ main {
   }
   .pricing__price__99 {
     font-size: 52px;
+  }
+  .pricing__price .button-colored {
+    padding: 15px 20px;
   }
   .partners {
     margin-bottom: 50px;
@@ -416,6 +421,7 @@ main {
   }
   h2 {
     font-size: 32px;
+    line-height: normal;
   }
   h6 {
     font-size: 14px;
@@ -742,6 +748,7 @@ main {
   .subscribe__heading {
     font-size: 24px;
     max-width: 250px;
+    line-height: normal;
   }
   .subscribe__send__button {
     width: 35px;
@@ -1012,7 +1019,7 @@ main {
     height: 419px;
   }
   .choose__info {
-    max-width: 220px;
+    max-width: 270px;
   }
   .choose__info__heading {
     padding-top: 24px;
@@ -1021,7 +1028,7 @@ main {
     padding-top: 0;
   }
   .choose__img .clients-vid {
-    top: 290px;
+    top: 390px;
     left: 130px;
   }
   .start h2 {
@@ -1109,6 +1116,9 @@ main {
     width: 200px;
     bottom: 70px;
     left: 25px;
+  }
+  .pricing__price .button-colored {
+    padding: 10px 15px;
   }
   .partners {
     margin-bottom: 50px;
@@ -1205,19 +1215,26 @@ main {
   }
   .subscribe {
     padding: 38px 44px 31px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .subscribe__heading {
     font-size: 24px;
-    max-width: 250px;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .subscribe__send {
+    margin-top: 5px;
   }
   .subscribe__send__button {
     width: 35px;
     height: 35px;
   }
   footer .footer {
-    overflow-x: hidden;
+    overflow: hidden;
     grid-template-columns: 150px 170px 230px;
-    grid-template-rows: 50px [logo] 270px [list] 0px;
+    grid-template-rows: 50px 280px 20px;
   }
   footer .footer .logo {
     grid-row-start: 1;
@@ -1795,15 +1812,18 @@ main {
   }
   .title__man {
     width: 200px;
-    height: 260px;
+    height: 232px;
     display: flex;
     position: relative;
+    margin-top: 25px;
   }
   .title__man__ph {
     width: 200px;
     height: 232px;
     position: absolute;
     margin-right: 300px;
+    bottom: 0;
+    left: -40px;
   }
   .title__man__light {
     top: 0px;
@@ -2125,23 +2145,28 @@ main {
   }
   .subscribe__send {
     width: 165px;
-    display: block;
-  }
-  .subscribe__send__button {
-    width: 25px;
-    height: 25px;
-    margin-left: 50px;
-    margin-top: 5px;
+    padding: 0;
+    position: relative;
   }
   .subscribe__send__form {
     width: 150px;
   }
-  .subscribe__send__form input[type="email"] {
-    font-size: 12px;
+  .subscribe__send__form div {
+    flex-direction: column;
+  }
+  .subscribe__send__form div input[type="email"] {
+    font-size: 14px;
     padding-left: 0px;
   }
   .subscribe__send__form__icon {
     display: none;
+  }
+  .subscribe__send__form__button img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 60px;
   }
   footer .footer {
     display: block;
