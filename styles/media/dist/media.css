@@ -2219,22 +2219,39 @@ main {
   @media screen and (max-width: 992px) {
     header {
       width: 720px;
-/*       display:inline;
-      padding:17px; */
     }
   }
   @media screen and (max-width: 768px) {
     header {
       width: 550px;
-/*       display:inline;
-      padding:17px; */
+    }
+    .title__man__ph {
+      top: -327px;
+    }
+    .small-video {
+      width: 147px;
+      height: 96px;
     }
   }
   @media screen and (max-width: 576px) {
     header {
       width: 398px;
-/*       display:inline;
-      padding:17px; */
+    }
+    .title__man__ph {
+      top: -377px
+    }
+    .play {
+      left: 58px;
+      top: 32px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .title__man__ph {
+      top: 0px
+    }
+    .play {
+      left: 77px;
+      top: 46px;
     }
   }
 }
