@@ -2208,3 +2208,33 @@ main {
     margin-bottom: 50px;
   }
 }
+@-moz-document url-prefix(){
+  @media screen and (max-width: 1250px) {
+    header {
+      width: 950px;
+      display:inline;
+      padding:17px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    header {
+      width: 720px;
+/*       display:inline;
+      padding:17px; */
+    }
+  }
+  @media screen and (max-width: 768px) {
+    header {
+      width: 550px;
+/*       display:inline;
+      padding:17px; */
+    }
+  }
+  @media screen and (max-width: 576px) {
+    header {
+      width: 398px;
+/*       display:inline;
+      padding:17px; */
+    }
+  }
+}
