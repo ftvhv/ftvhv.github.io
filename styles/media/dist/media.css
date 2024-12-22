@@ -2244,15 +2244,10 @@ main {
     .title__man__ph {
       top: -377px
     }
-    
   }
   @media screen and (max-width: 420px) {
     .title__man__ph {
       top: 0px
-    }
-    .play {
-      left: 77px;
-      top: 46px;
     }
   }
 }
