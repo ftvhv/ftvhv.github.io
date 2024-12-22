@@ -2232,6 +2232,10 @@ main {
       width: 147px;
       height: 96px;
     }
+    .play {
+      left: 58px;
+      top: 32px;
+    }
   }
   @media screen and (max-width: 576px) {
     header {
@@ -2240,10 +2244,7 @@ main {
     .title__man__ph {
       top: -377px
     }
-    .play {
-      left: 58px;
-      top: 32px;
-    }
+    
   }
   @media screen and (max-width: 420px) {
     .title__man__ph {
